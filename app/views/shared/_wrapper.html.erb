@@ -1,0 +1,29 @@
+<!-- <div class="wrapper-blue" style="background-image: url(<%= image_url 'background_bar.jpeg'%>); width: 100;">
+      <h2 class="center">Bienvenue <strong>chez cocktail party</strong></h2>
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-12 col-md-6 col-md-offset-3">
+            <h3>Nos coctails</h3>
+            <p>
+              Nos cocktails sont réalisés avec amour à partir d'ingrédients 100% bio et Français. Imaginé par Steven après son voyage au tour du monde, savourez des saveurs encore inexplorées
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-md-6 col-md-offset-3">
+            <h3>Notre service</h3>
+            <p>
+              L'explosion de plaisir vient d'un instant bref, que seule Alicia, manager du Cokctail Gaystar pourra pour offrir.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div> -->
+
+  <div class="banner" style="background-image: linear-gradient(-225deg, rgba(36,16,4,0.6) 0%, rgba(0,36,61,0.6) 90%), url(<%= image_url 'background_bar.jpeg'%>);">
+    <div class="banner-content">
+      <h1>Le Cokctail party</h1>
+      <p>Decouvrez des saveurs inedites</p>
+      <%= link_to "ajouter votre cocktails", new_cocktail_path, class: "btn btn-primary btn-lg" %>
+      <!-- <a class="btn btn-primary btn-lg">ajouter votre cocktails</a> -->
+    </div>
+</div>
