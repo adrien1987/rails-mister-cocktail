@@ -1,3 +1,17 @@
-<h1><%= @cocktail.name %></h1>
-<%= link_to "retourner aux cocktails", cocktails_path %>
-<%= link_to "ajouter une dose", new_cocktail_dose_path(@cocktail) %>
+
+<div class="container">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_url 'sex.jpg'%>'); margin-top: 100px; margin-bottom: 30px;">
+        <div class="card-description">
+          <h1><%= @cocktail.name %></h1>
+          <p>cocktail.doses</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <%= link_to "revenir aux cocktails", cocktails_path, class: "btn btn-primary" %>
+  <%= link_to "ajouter une dose", new_cocktail_dose_path(@cocktail), class: "btn btn-primary" %>
+
+</div>
