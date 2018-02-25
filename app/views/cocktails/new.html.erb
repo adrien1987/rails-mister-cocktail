@@ -4,7 +4,7 @@
     <div class="col-xs-12 col-sm-6 col-sm-offset-2">
       <div class="presentation">
         <p>Bienvenue chez Cocktail Party, c'est ici que tu peux
-          ajouter ton cocktail avec tes ingredients !
+          ajouter ton cocktail avec sa photo !
         </p>
       </div>
     </div>
@@ -14,7 +14,8 @@
       <div class="box2">
         <div class="questionnaire">
           <%= simple_form_for(@cocktail) do |f| %>
-          <%= f.input :name, label: 'Nom du cocktail', label_html: { class: 'my_class' } %>
+          <%= f.input :name, label: 'Nom du cocktail'%>
+          <%= f.input :photo, label: 'Ta photo'%>
           <%= f.submit 'Ajoute ton cocktail', class:'btn btn-primary' %>
           <% end %>
         </div>
