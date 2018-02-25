@@ -11,12 +11,16 @@
   </div>
   <div class="row">
     <div class="col-xs-12 col-sm-6 col-sm-offset-2">
-      <div class="questionnaire">
-        <%= simple_form_for(@cocktail) do |f| %>
-        <%= f.input :name, label: 'Nom du cocktail', label_html: { class: 'my_class' } %>
-        <%= f.submit 'Ajoute ton cocktail', class:'btn btn-primary' %>
-        <% end %>
+      <div class="box2">
+        <div class="questionnaire">
+          <%= simple_form_for(@cocktail) do |f| %>
+          <%= f.input :name, label: 'Nom du cocktail', label_html: { class: 'my_class' } %>
+          <%= f.submit 'Ajoute ton cocktail', class:'btn btn-primary' %>
+          <% end %>
+        </div>
+        <div class="revenir">
+          <%= link_to "revenir aux cocktails", cocktails_path, class:"btn btn-primary" %>
+        </div>
       </div>
     </div>
   </div>
-    

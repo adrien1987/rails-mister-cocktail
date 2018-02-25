@@ -1,12 +1,13 @@
-<h1><%= @cocktail.name %>
-
-<div class="container">
-
-  <%= simple_form_for([@cocktail, @dose]) do |f| %>
-
-    <%= f.input :description %>
-    <%= f.input :ingredient_id, collection: (Ingredient.all)%>
-    <%= f.submit %>
-
-  <% end %>
+<div class="box">
+    <div class="up_block2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_url 'sex.jpg'%>');"></div>
+  <div class="show_description">
+    <h2> Recette cocktail : <%= @cocktail.name %></h2>
+    <div class="questionnaire">
+      <%= simple_form_for([@cocktail, @dose]) do |f| %>
+        <%= f.input :description %>
+        <%= f.input :ingredient_id, collection: (Ingredient.all)%>
+        <%= f.submit 'ajoute ta recette', class:'btn btn-primary' %>
+        <% end  %>
+    </div>
+  </div>
 </div>

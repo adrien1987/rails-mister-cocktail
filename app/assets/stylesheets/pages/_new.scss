@@ -12,3 +12,9 @@ h1 {
   margin-bottom: 50px;
   text-align: left;
 }
+
+.box2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}

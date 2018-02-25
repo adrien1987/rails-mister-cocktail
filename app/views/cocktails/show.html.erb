@@ -4,9 +4,17 @@
     <div class="up_block2" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_url 'sex.jpg'%>');"></div>
   <div class="show_description">
     <h2> Recette cocktail : <%= @cocktail.name %></h2>
+    <% @cocktail.doses.each do |dose| %>
+       <li>
+       <%= dose.ingredient.name %> : <%= dose.description %>
+         <%= link_to " ", dose_path(dose),
+             method: :delete,
+             data: { confirm: "Are you sure?" }, class:"glyphicon glyphicon-trash" %>
+       </li>
+       <% end %>
   </div>
 </div>
-    
+
 
 
 
