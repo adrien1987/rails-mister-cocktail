@@ -1,0 +1,31 @@
+.show_description h2 {
+  font-family: 'Lobster Two', cursive;
+}
+
+.box {
+  display: flex;
+  padding: 10px;
+  border: solid;
+  align-items: center;
+  margin-top: 150px;
+  flex-wrap: wrap;
+}
+
+.container3 {
+  margin-top: 70px;
+  height: 100vh;
+}
+
+.up_block2 {
+  height: 400px;
+  width: 300px;
+  background-position: center !important;
+  background-size: cover !important;
+}
+
+.show_description {
+  height: 400px;
+  flex-grow: 1;
+  padding: 15px;
+
+}

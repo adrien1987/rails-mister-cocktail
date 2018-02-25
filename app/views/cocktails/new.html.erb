@@ -1,6 +1,22 @@
-<%= form_for(@cocktail) do |f| %>
-  <%= f.label :name %>
-  <%= f.text_field :name %>
 
-  <%= f.submit %>
-<% end %>
+<div class="container_new">
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-2">
+      <div class="presentation">
+        <p>Bienvenue chez Cocktail Party, c'est ici que tu peux
+          ajouter ton cocktail avec tes ingredients !
+        </p>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-xs-12 col-sm-6 col-sm-offset-2">
+      <div class="questionnaire">
+        <%= simple_form_for(@cocktail) do |f| %>
+        <%= f.input :name, label: 'Nom du cocktail', label_html: { class: 'my_class' } %>
+        <%= f.submit 'Ajoute ton cocktail', class:'btn btn-primary' %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+    

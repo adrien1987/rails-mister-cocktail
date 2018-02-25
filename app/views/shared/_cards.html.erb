@@ -1,12 +1,17 @@
 
-    <%= link_to cocktail_path(cocktail) do %>
-    <div class="col-xs-12 col-sm-6 col-sm-offset-3">
-      <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_url 'sex.jpg'%>');">
+<%= link_to cocktail_path(cocktail) do %>
+  <div class="col-xs-12 col-sm-6 ">
+    <div class="card">
+      <div class="up_block" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('<%= image_url 'sex.jpg'%>');"></div>
+      <div class="bottom_block">
         <div class="card-category">Monthly Popular</div>
         <div class="card-description">
           <h2><%= cocktail.name %></h2>
-          <p>Very cool cocktail</p>
+        </div>
+        <div class="bg_red">
+          <p>recette</p>
         </div>
       </div>
     </div>
-    <% end %>
+  </div>
+  <% end %>

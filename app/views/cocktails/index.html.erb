@@ -2,8 +2,9 @@
 <%= render 'shared/wrapper' %>
   <div class="container">
     <div class="row">
-      <% @cocktails.each do |cocktail| %>
-        <%= render 'shared/cards', cocktail: cocktail %>
-      <% end %>
+        <% @cocktails.each do |cocktail| %>
+          <%= render 'shared/cards', cocktail: cocktail %>
+        <% end %>
+      </ul>
     </div>
   </div>
